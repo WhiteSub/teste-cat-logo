@@ -1,0 +1,132 @@
+* {
+    margin: 5px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+      /* Centralizar na vertical e na horizontal */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.inside-card {
+    background-color: #021b47d7;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 800px;
+    padding: 20px;
+    border-radius: 15px;
+
+    h1 {
+        border-bottom: 2px solid orange;
+    }
+
+    h3 {
+        font-size: 16px;
+        color: orange;
+    }
+}
+
+.img-card {
+    background: url(img/IMG.TEC.jpg);
+    background-size: cover;
+    width: auto;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.sub-card {
+    width: 230px;
+    background-color: #0048aa;
+    border-radius: 15px;
+}
+
+
+/* card config */
+
+.carrosel{
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrosel-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slides{
+    width: 400px;
+    height: 400px;
+    display: flex;    
+}
+.slides input{
+    display: none;
+}
+
+.imagensSel-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    
+
+}
+.imagensSel{
+    flex: 0 0 50%;
+    height: 275px;
+    background-color: #0048aa;
+    border-radius: 15px;
+    align-self: center;
+}
+.imagensSel img{
+    max-width: 230px;
+    height: 500px;
+    object-fit: cover
+}
+
+.manual-nav{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.manual-btn:not(:last-child){
+    margin-right: 30px;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .imagensSel-container {
+    margin-left: 0;
+}
+#radio2:checked ~ .imagensSel-container {
+    margin-left: -600%;
+}
+#radio3:checked ~ .imagensSel-container {
+    margin-left: -1000%
+}
+#radio4:checked ~ .imagensSel-container {
+    margin-left: -300%;
+}
+#radio5:checked ~ .imagensSel-container {
+    margin-left: -400%;
+}
