@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container-catalogo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 66, 117);
+    height: 100vh;
+    width: 1000px;
+    margin-block: 20px;
+    padding: 20px;
+    gap: 20px;
+    text-align: left;
+    border-radius: 20px;
+    color: #fff;
+}
+.header{
+    margin: 20px 75px 10px 75px;
+}
+.header h1{
+    border-bottom: solid orange;
+}
+.main h2{
+    padding-left: 10px;
+}
+.slider{
+    overflow-x: auto;
+}
+.arrow-left{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: auto;
+}
+.arrow-right{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+}
+.card-list{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: nowrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.card-item{
+    background-color: rgb(93, 160, 236);
+    padding: 0;
+    margin-inline: 10px;
+    width: 250px;
+    border-radius: 8px;
+}
+.card-item h3{
+    color: rgb(255, 188, 62);
+}
+.text,.bnt{
+    padding: 0px 10px 10px 10px;
+}
+.bnt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.bnt button{
+    padding: 5px 15px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+}
+.bnt-inscreva{
+    background-color: orange;
+}
+.bnt-sobre{
+    background-color: rgb(44, 44, 247);
+}
+.img-cursos{
+    width: 250px;
+    border-radius: 8px 8px 0 0;
+}
