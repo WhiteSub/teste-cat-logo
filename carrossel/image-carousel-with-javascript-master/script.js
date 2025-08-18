@@ -1,3 +1,4 @@
+//declaração de variavel
 const imgs = document.getElementById('imgs')
 const leftBtn = document.getElementById('left')
 const rightBtn = document.getElementById('right')
@@ -6,8 +7,10 @@ const img = document.querySelectorAll('#imgs img')
 
 let idx = 0
 
-let interval = setInterval(run, 2000)
+let interval = setInterval(run, 20000)
+//fim da declaração
 
+//movimento das imagens
 function run() {
     idx++
     changeImage()
@@ -20,12 +23,14 @@ function changeImage() {
         idx = img.length - 1
     }
 
-    imgs.style.transform = `translateX(${-idx * 500}px)`
+    imgs.style.transform = `translateX(${-idx * 310}px)`
 }
+//fim do movimento
 
+//resetar timer
 function resetInterval() {
 clearInterval(interval)
-interval = setInterval(run, 2000)
+interval = setInterval(run, 20000)
 
 }
 
@@ -40,3 +45,4 @@ leftBtn.addEventListener('click', () => {
     changeImage()
     resetInterval()
 })
+//fim do reset
